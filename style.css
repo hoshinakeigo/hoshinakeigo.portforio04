@@ -1,0 +1,526 @@
+@charset "utf-8";
+html {
+    font-family: "Times New Roman", "ＭＳ Ｐ明朝","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif";
+}
+a, p, h1, h2, h3, h4, h5, span {
+    font-family: "Times New Roman", "ＭＳ Ｐ明朝","ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "serif" ;
+    color: #fff;
+    letter-spacing: 0.05em;
+    border: none;
+}
+.main {
+    position: relative;
+    overflow: hidden;
+    min-width: 1200px;
+    background-color: #000000;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+/*-- nav --*/
+
+.globalnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px 0 0 0;
+    box-sizing: border-box;
+    height: 100px;
+    min-width: 1200px;
+    text-align: center;
+    z-index: 3;
+    background: linear-gradient(to bottom, rgba(51, 51, 51, 1) 0%, transparent);
+}
+.globalnav_link {
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+.globalnav_link:nth-child(5) {
+    margin-left: 240px;
+
+}
+
+.globalnav_link:nth-child(5) a {
+    color: #b11717;
+}
+.globalnav_link:nth-child(6) a {
+    color: #e7c81e;
+}
+/*-- contents --*/
+
+.main_visual {
+    position: relative;
+}
+.store_name {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    font-size: 4.8rem;
+    font-family: 'Inika', serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.store_name:before {
+    content: "French";
+    font-size: 1.8rem;
+    font-family: "Times New Roman", Times, "serif";
+    position: absolute;
+    top: 3%;
+    left: 79%;
+}
+.store_name:after {
+    content: "ピエール・カレ";
+    font-size: 1.2rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 80%;
+    left: 34%;
+}
+.main_desc {
+    padding: 86px 0 302px 0;
+}
+.grid {
+    position: relative;
+    margin: 0 auto 0 auto;
+    width: 1040px;
+}
+.main_desc_title {
+    font-family: "Sawarabi Mincho";
+    font-size: 2rem;
+}
+.main_dezc_contents {
+    margin: 52px 0 0 0;
+    font-family: "Sawarabi Mincho";
+    line-height: 1.8;
+}
+
+/*-- lunch --*/
+
+.lunch {
+    padding: 0 0 2021px 0;
+}
+.lunch_pic {
+    position: absolute;
+}
+.lunch_pic1 {
+    top: -710px;
+    left: -190px;
+}
+.lunch_pic2 {
+    top: -650px;
+    right: -250px;
+}
+.lunch_pic3 {
+    top: -260px;
+    left: -500px;
+}
+.lunch_pic4 {
+    top: 345px;
+    right: -430px;
+}
+.lunch_pic5 {
+    top: 400px;
+    left: -350px;
+}
+.lunch_pic6 {
+    top: 800px;
+    left: 180px;
+}
+.lunch_pic7 {
+    top: 980px;
+    left: -330px;
+}
+.lunch_pic8 {
+    top: 1215px;
+    left: 60px;
+}
+.lunch_pic9 {
+    top: 1360px;
+    left: 500px;
+}
+.lunch_pic10 {
+    top: 1050px;
+    right: -600px;
+}
+.lunch_pic11 {
+    top: 1500px;
+    left: -400px;
+}
+.lunch_box {
+    position: absolute;
+    top: 180px;
+    right: 0;
+    width: 653px;
+    height: 467px;
+    border-radius: 5px;
+    background-color: #b11717;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 120px 0 0 0;
+}
+
+.lunch_inner {
+    width: 653px;
+    height: 350px;
+    position: relative;
+}
+.lunch_inner::after {
+    content: url(ribon1.png);
+    position: absolute;
+    top: -100px;
+    left: 15px;
+}
+.lunch_inner_left {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    text-align: center;
+}
+.lunch_inner_left h4 {
+    font-size: 45px;
+}
+.lunch_inner_left span{
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+    margin: 10px auto;
+}
+.time {
+    font-size: 1.3rem;
+    margin: 15px;
+}
+.lunch_inner_left p:nth-child(4){
+    font-size: 1.6rem;
+    margin: 35px 0 0 0;
+}
+.lunch_inner_right {
+    position: absolute;
+    width: 200px;
+    top: 8%;
+    left: 55%;
+}
+.lunch_inner_right p {
+    font-size: 1.2rem;
+    display: block;
+    text-align: left;
+    line-height: 1.3;
+}
+.btn {
+    display: block;
+    text-align: center;
+    margin: 38px 0 0 0;
+    width: 165px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #fff;
+    line-height: 2.65;
+    letter-spacing: 1px;
+    transition: color 160ms linear, background-color 160ms linear;
+}
+.lunch_box a:hover .btn {
+    background-color: #fff;
+    color: #b11717;
+}
+.lunch_box a:active {
+    opacity: 0.8;
+    background-color: #510E0F;
+}
+.dinner_box a:hover .btn {
+    background-color: #fff;
+    color: #d9b125;
+}
+.dinner_box a:active {
+    opacity: 0.8;
+    background-color: #5F4912;
+}
+/*-- dinner --*/
+
+.dinner {
+     padding: 0 0 2057px 0;
+}
+.dinner_pic {
+    position: absolute;
+}
+.dinner_img1 {
+    top: -300px;
+    right: -300px;
+}
+.dinner_img2 {
+    top: 400px;
+    left: -350px;
+}
+.dinner_img3 {
+    top: 1000px;
+    right: -170px;
+}
+.dinner_img4 {
+    top: 1300px;
+    left: -30px;
+}
+.dinner_img5 {
+    top: 1500px;
+    right: -20px;
+}
+.dinner_box {
+    position: absolute;
+    top: -130px;
+    left: 0;
+    width: 653px;
+    height: 467px;
+    border-radius: 5px;
+    background-color: #d9b125;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 120px 0 0 0;
+}
+
+.dinner_inner {
+    width: 653px;
+    height: 350px;
+    position: relative;
+}
+.dinner_inner::after {
+    content: url(ribon2.png);
+    position: absolute;
+    top: -100px;
+    left: 30px;
+}
+.dinner_inner_left {
+    position: absolute;
+    top: 5%;
+    left: 13%;
+    text-align: center;
+}
+.dinner_inner_left h4 {
+    font-size: 45px;
+}
+.dinner_inner_left span{
+    font-size: 1.1rem;
+    letter-spacing: -0.5px;
+    margin: 10px auto;
+}
+.dinner_inner_left p:nth-child(4){
+    font-size: 1.6rem;
+    margin: 82px 0 0 0;
+}
+.dinner_inner_right {
+    position: absolute;
+    width: 180px;
+    top: 7%;
+    left: 58%;
+}
+.dinner_inner_right p {
+    font-size: 1.2rem;
+    display: block;
+    text-align: left;
+    line-height: 1.3;
+}
+
+/*-- resevation --*/
+
+.resevation {
+    width: 100%;
+    height: 580px;
+    background-color: #fff;
+}
+.resevation_heading,
+.resevation_disc {
+    color: #3d3d3d;
+}
+.resevation_heading {
+    font-size: 4rem;
+    padding: 40px 0 0 0;
+}
+.resevation_disc {
+    font-size: 1.2rem;
+    padding: 0 0 30px 0;
+}
+.tel_wrapper {
+    position: relative;
+    width: 1040px;
+    padding: 0 0 200px 0;
+    background-color: #b11717;
+    border-radius: 8px;
+}
+.tel {
+    position: absolute;
+    top: 25px;
+    left: 10%;
+    font-size: 6rem;
+}
+.tel_warning {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 130px;
+    left: 260px;
+}
+
+/*-- interior --*/
+
+.interior {
+    padding: 60px 0;
+    background-color: #313131;
+}
+.interior_heading {
+    margin: 10px 0 30px;;
+    font-size: 4rem;
+    padding: 0;
+}
+.interior_photos {
+    margin: 0;
+    width: 100%;
+    display: table;
+}
+.interior_photo {
+    display: table-cell;
+    width: 50%;
+    height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+}
+.interior_photo_1 {
+    background-image: url(int1.jpg);
+}
+.interior_photo_2 {
+    background-image: url(int2.jpg);
+}
+
+/*-- access --*/
+
+.access {
+    padding: 60px 0 0 0;
+}
+.access_heading {
+    font-size: 4rem;
+    padding: 0;
+}
+.access_disc_wrapper {
+    position: relative;
+}
+.access_address {
+    margin: 50px 0 30px 0;
+    font-size: 24px;
+    font-family: "Sawarabi Mincho";
+}
+.access_detail {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: normal;
+    font-family: "Sawarabi Mincho";
+}
+#map_canvas {
+  margin: 60px 0 60px 0;
+}
+
+/*-- information --*/
+
+.information .grid::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 50%;   
+      height: 100%;
+      display: block;
+      background-color: f000;
+      background-image: url(chef1.jpg);
+      -moz-background-size: auto 100%;
+      -o-background-size: auto 100%;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      border-radius: 8px 0 0 8px;
+}
+.information_block {
+    margin: 0 0 0 auto;
+    width: 50%;
+    height: 800px;
+    background-color: #b11717;
+    display: table;
+    border-radius: 0 8px 8px 0;
+}
+.information_inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.information_title {
+    margin: 0 auto 50px auto;
+    font-size: 3rem;
+}
+.information_block p {
+    font-family: "Sawarabi Mincho";
+    letter-spacing: -0.2px;
+}
+.information_subblock::after {
+    content: ' ';
+    display: inline-block;
+    margin: 10px 0;
+    width: 220px;
+    height: 1px;
+    background-color: #a15a5c;
+}
+.info_title {
+    font-size: 1.8rem;
+    letter-spacing: -1.1px;
+}
+.info_tel {
+    letter-spacing: -0.3px;
+}
+.tel_disc {
+    font-size: 0.7rem;
+    margin: 8px 0 0 0;
+}
+
+/*-- footer --*/
+
+.footer {
+    position: relative;
+    margin: 150px 0 0 0;
+    padding: 150px 0 100px 0;
+    text-align: center;
+    background-color: #313131; 
+}
+.footer img {
+    width: 150px;
+    height: 150px;
+    
+}
+.footer_logo {
+    font-family: 'Inika', serif;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin: 0 0 50px 0;
+}
+.footer_logo::after {
+    content: "ピエール・カレ";
+    font-size: 0.8rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    position: absolute;
+    top: 49%;
+    left: 43.8%;
+}
+.footer p:nth-child(3) {
+    font-size: 0.9rem;
+    margin: 0 0 40px 0;
+    text-decoration: underline;
+}
+.footer p:nth-child(4) {
+    font-family: "Sawarabi Mincho";
+    font-size: 1.1rem;
+    margin: 0 0 12px;
+}
+.footer p:nth-child(5) {
+    font-size: 0.8rem;
+}
